@@ -118,15 +118,16 @@ console.log('Adding numbers 5 + 10 + 15 + 50 =', sumAll([5, 10, 15, 50]));
 function positive( originalArray ){
   let posArray = [];
   for(let i=0; i < originalArray.length; i++){
-
     if(originalArray[i] > 0){
       posArray.push(originalArray[i]);
-    }
-  }
-}
+    } // end if conditional
+  } // end for loop
+  return posArray;
+} // end positive function
 
-console.log('Out of the numbers 9, -8, 2, and -5...');
-console.log('...the positive numbers are:', positive( [ 9, -8, 2, -5 ] ));
+console.log('Out of the numbers -2, 9, -8, 2, 63, 0 and -5...');
+console.log('...the positive numbers are:', positive( [ -2, 9, -8, 2, 63, 0, -5 ] ));
+
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or
