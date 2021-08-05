@@ -19,7 +19,7 @@ function helloName( name ) {
   return name;
 } //end helloName function
 // Remember to call the function to test
-console.log( 'Hello,', helloName('Chris') + '!Okay ');
+console.log( 'Hello,', helloName('Chris') + '!');
 
 
 // 3. Function to add two numbers together & return the result
@@ -70,11 +70,22 @@ function getLast( array ) {
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
-function find( value, array ){
-  console.log( 'in find');
-  
 
+function find( value, array ){
+  for(let i=0; i<array.length; i++){
+    if( array[i] === value ){
+      return true;
+    }
+  }
+  return false;
 }
+
+console.log('testing find with value 1486 and array 5, 12, 1486, 2');
+console.log(find( 1486, [ 5, 12, 1486, 2  ]))
+
+console.log('testing find with value 73 and array 4, 6, 8, 13, 74, 22, 80, 1000');
+console.log(find( 73, [  4, 6, 8, 13, 74, 22, 80, 1000  ]))
+
 
 // ----------------------
 // Stretch Goals
@@ -82,22 +93,40 @@ function find( value, array ){
 // 8. Function to check if a letter is the first letter in a
 //    string. Return true if it is, and false otherwise
 function isFirstLetter(letter, string) {
-
+  return letter === string[0];
 }
+
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
+
 // 9. Function to return the sum of all numbers in an array
-function sumAll( ) {
-  let sum = 0
-  // TODO: loop to add items
+function sumAll( addNums ) {
+  let sum = 0;
+    for(let i=0; i < addNums.length; i++){
+      sum+=addNums[i];
+    }
   return sum;
 }
+
+console.log('Adding numbers 5 + 10 + 15 + 50 =', sumAll([5, 10, 15, 50]));
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 
+function positive( originalArray ){
+  let posArray = [];
+  for(let i=0; i < originalArray.length; i++){
+
+    if(originalArray[i] > 0){
+      posArray.push(originalArray[i]);
+    }
+  }
+}
+
+console.log('Out of the numbers 9, -8, 2, and -5...');
+console.log('...the positive numbers are:', positive( [ 9, -8, 2, -5 ] ));
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or
