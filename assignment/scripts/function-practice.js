@@ -151,6 +151,7 @@ console.log('The product of 3 and 5 is:', multiply(3, 5));
 console.log('The product of 2 and 15 is:', multiply(2, 15));
 console.log('The product of 14.53 and 12.9887 is:', multiply(14.53, 12.9887));
 
-// That was really the first one - no joke. I did sign up and connect
-// my github and I'm seriously STOKED to do more challenges. I'll create a
-// new repo for practice stuff. Thanks again for the links!
+// I did one from edabit and it won't let me go back and copy it! 
+// it was determining the number of seconds from a number of
+// minutes. I'll try to sneak one more in...
+// ...and I'll be working on these all dang night now!!
