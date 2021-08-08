@@ -134,7 +134,7 @@ console.log('...the positive numbers are:', positive( [ -2, 9, -8, 2, 63, 0, -5 
 //     CodeWars(https://www.codewars.com/). Then describe it
 //     here in a comment, write the function, and test it!
 
-//this is the first one that came up -
+//this is the first one that came up (initial test??)-
 //thanks for the links! Gonna try a bunch of stuff!!
 
 //DOES NOT EXECUTE PROPERLY - SOLVE
@@ -144,9 +144,13 @@ function multiply(a, b){
 
 //ANSWER:
 function multiply(a, b){
-  return a * b;
+  return a * b; //added return
 }
 
 console.log('The product of 3 and 5 is:', multiply(3, 5));
 console.log('The product of 2 and 15 is:', multiply(2, 15));
 console.log('The product of 14.53 and 12.9887 is:', multiply(14.53, 12.9887));
+
+// That was really the first one - no joke. I did sign up and connect
+// my github and I'm seriously STOKED to do more challenges. I'll create a
+// new repo for practice stuff. Thanks again for the links!
