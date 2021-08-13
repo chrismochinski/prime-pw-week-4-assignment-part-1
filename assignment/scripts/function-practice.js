@@ -56,13 +56,13 @@ console.log( 'isPositive - should say true', isPositive(3) ); //test function w/
 console.log( 'isPositive - should say false', isPositive(0) ); //test function w/ 0
 console.log( 'isPositive - should say false', isPositive(-3) ); //test function w/ -3
 
-
+//GOT THIS ONE WRONG SHOULD HAVE BEEN
 // 6. Function to return the _last_ item in an array. If the
 //    array is empty, return `undefined`.
 function getLast( array ) { //creating a function getLast
   console.log( 'in getLast' );
-  let bodyParts = [ 'head', 'shoulders', 'knees', 'toes'];
-  return bodyParts[3]; // return the 4th item in the array (index 3)
+  let bodyParts = [ 'head', 'shoulders', 'knees', 'toes', 'face'];
+  return bodyParts[bodyParts.length -1]; // return the LAST item in the array :) FIXED
 }
   console.log( 'the last body part is', getLast() ); //run function
 
@@ -151,7 +151,7 @@ console.log('The product of 3 and 5 is:', multiply(3, 5));
 console.log('The product of 2 and 15 is:', multiply(2, 15));
 console.log('The product of 14.53 and 12.9887 is:', multiply(14.53, 12.9887));
 
-// I did one from edabit and it won't let me go back and copy it! 
+// I did one from edabit and it won't let me go back and copy it!
 // it was determining the number of seconds from a number of
 // minutes. I'll try to sneak one more in...
 // ...and I'll be working on these all dang night now!!
